@@ -5,6 +5,3 @@
   ----done
 
 3. working with the sideBar contents [add 3 widgets, layers, tiles,colorSchemes].
-
-
-in each layer color picker there is a color,outline color,symbol
