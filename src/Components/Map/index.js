@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import {Map,TileLayer,Marker,Popup,Circle,GeoJSON} from 'react-leaflet'
+import {Map,TileLayer,Marker,Popup,Circle} from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
 import L from 'leaflet'
 import {MapContainer,LeafMapContainer} from './styles/style'
 import Sidebar from '../Sidebar/Sidebar/index'
 import TogglersContainer from '../Togglers/TogglersContainer/index'
-import json_data from './Obied.geojsonl.json'
+import GeoJSON_ from './MapComponents/Geojson'
 
-export default class index extends Component {
+class index extends Component {
     constructor(props){
             super(props);
             this.state={
@@ -17,10 +17,11 @@ export default class index extends Component {
             };
 
     }       
-        
+
     render() {
         L.Icon.Default.imagePath='img/'; 
-        const position = [this.state.lat,this.state.long]; 
+        const position = [this.state.lat,this.state.long];  
+
         return (
             <div>
                 <MapContainer>
@@ -32,7 +33,7 @@ export default class index extends Component {
                                 <Popup>That one who called binga</Popup>
                             </Marker>
                             <Circle center = {position} radius={200}/>   
-                            <GeoJSON data={json_data} style={{color:'none',fillColor: 'white'}}/>                
+                            <GeoJSON_/>
                         </Map>
                     </LeafMapContainer>
                     <TogglersContainer/>
@@ -41,3 +42,5 @@ export default class index extends Component {
         )
     }
 }
+
+export default index; 
