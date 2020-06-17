@@ -1,5 +1,0 @@
-1. add a comma-sepration between object:
-replace }} with }}, 
-
-2. remove the last object comma. 
-3. add brackets and begining and ending [] , containing all the objects. 
