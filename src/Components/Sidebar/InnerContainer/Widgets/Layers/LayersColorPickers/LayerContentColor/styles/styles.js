@@ -45,4 +45,5 @@ export const ColorPicked = styled.div`
     height:60px; 
     background-color:${props=>props.color}; 
     cursor:pointer; 
+    color:white; 
 `

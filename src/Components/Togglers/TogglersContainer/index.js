@@ -1,5 +1,5 @@
 import React,{Fragment} from 'react'
-import {LeafTogglersContainer,LeafMapToggler,LeafSearchBar} from './styles/styles'
+import {LeafTogglersContainer,Binga} from './styles/styles'
 import DataToggler from '../DataToggler/index'
 import MapToggler from '../MapToggler/index'
 import SearBar from '../SearchBar/index' 
@@ -8,8 +8,10 @@ export default function index() {
         <Fragment>
             <LeafTogglersContainer>
                 <SearBar/>
+                <Binga>
                 <MapToggler/>
                 <DataToggler/>
+                </Binga>
             </LeafTogglersContainer>
         </Fragment>
     )

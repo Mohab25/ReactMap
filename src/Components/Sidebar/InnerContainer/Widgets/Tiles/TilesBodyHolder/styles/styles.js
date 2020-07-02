@@ -1,20 +1,20 @@
 import styled from 'styled-components'
 
-export const LayerBodyHolder = styled.div`
+export const TilesBodyHolder = styled.div`
     width:90%; 
     height:${props=>props.height}px; 
     background-color:#2f2f2f; 
     margin-left:-2%;
     display:flex; 
     flex-direction:column; 
-    justify-content:space-between; 
+    justify-content:flex-start ; 
     align-items:flex-start; 
     align-content:space-evenly; 
     overflow:${props=>props.overFlow};
     transition:1s; 
 `
 
-export const LayerNameHolder = styled.div`
+export const TilesNameHolder = styled.div`
     width:100%; 
     background-color:#1f1f1f; 
     padding:10px; 
@@ -24,10 +24,10 @@ export const LayerNameHolder = styled.div`
     cursor:pointer; 
 `
 
-export const LayerName = styled.p`
+export const TilesName = styled.p`
     color:white;
 `
 
-export const LayerToggleIcon =styled.p`     
+export const TilesToggleIcon =styled.p`     
     color:white;
 `

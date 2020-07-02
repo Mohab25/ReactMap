@@ -9,8 +9,8 @@ import {colorChanger} from '../../../../../../../Actions/ActionsCreators/LayerCo
 
 export default function Index() {
     const [Renderer,setRenderer] = useState(''); 
-    const [colorSet1] = useState(['white','black','grey'])[0]; 
-    const [colorSet2] = useState(['green','blue','red'])[0];
+    //const [colorSet1,SetColors1] = useState(['white','black','grey']); 
+    const [colorSet2,SetColors2] = useState(['green','blue','red']);
     const fillColor = useSelector(state=>state.LayerColors.fillColor); 
     const dispatch = useDispatch();
 
@@ -37,9 +37,9 @@ export default function Index() {
         return(
             <Fragment>
                 <ColorPalette onClick={colorPalette}>
-                <ColorPickedContainer>
+                {/*<ColorPickedContainer>
                     {colorSet1.map((color,index)=><ColorPicked key={index} color={color} onClick={()=>dispatch(colorChanger(color))}/>)}
-                </ColorPickedContainer>
+                </ColorPickedContainer>*/}
                 <ColorPickedContainer>
                     {colorSet2.map((color,index)=><ColorPicked key={index} color={color} onClick={()=>dispatch(colorChanger(color))}/>)}
                 </ColorPickedContainer>

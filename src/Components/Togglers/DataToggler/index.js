@@ -1,9 +1,22 @@
 import React,{Fragment} from 'react'
 import {LeafDataToggler} from './styles/styles'
-export default function index() {
+import {useSelector,useDispatch} from 'react-redux' 
+import {toggleDataView} from '../../../Actions/ActionsCreators/ToggleActions/ToggleDataView'
+
+export default function Index() {
+
+    let view = useSelector(state=>state.ToggleView.View); 
+    let dispatch = useDispatch(); 
+
+    let switchData=(view)=>{
+        // change redux state. 
+        dispatch(toggleDataView())
+        console.log(view)
+    }
+
     return (
         <Fragment>
-            <LeafDataToggler>Data</LeafDataToggler>
+            <LeafDataToggler onClick={()=>switchData(view)}>Data</LeafDataToggler>
         </Fragment>
     )
 }

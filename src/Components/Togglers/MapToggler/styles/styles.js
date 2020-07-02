@@ -7,5 +7,5 @@ export const LeafMapToggler= styled.div`
     color:white;
     background-color:teal; 
     margin-right:10px; 
-    cursor:pointer
+    cursor:pointer;
 `

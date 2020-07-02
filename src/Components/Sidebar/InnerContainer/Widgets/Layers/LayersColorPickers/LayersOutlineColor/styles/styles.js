@@ -15,7 +15,8 @@ export const SidebarInnerOulineColorPickerText=styled.p`
 export const SidebarInnerOutlineColorPickerDiv=styled.div`
 width:50px; 
 height:30px; 
-background-color:white; 
+background-color:${props=>props.color}; 
 align-self:flex-start; 
 margin-left:20px; 
+border:4px solid ${props=>props.outline}; 
 `

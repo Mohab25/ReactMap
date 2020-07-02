@@ -24,7 +24,7 @@ export default function Index() {
         <Fragment>
             <LayerBodyHolder height={bodyHeight} overFlow={overflow}>
                 <LayerNameHolder onClick={toggleHeightAndOverflow}>
-                    <LayerName>Layer Name</LayerName>
+                    <LayerName>Color Scheme</LayerName>
                     <LayerToggleIcon>^</LayerToggleIcon>
                 </LayerNameHolder>
                 <ContentColorPicker/>
